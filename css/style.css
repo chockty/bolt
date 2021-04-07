@@ -12,6 +12,24 @@ body {
   margin: 0 auto;
 }
 
+.btn-link {
+  color: white;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.btn-format {
+  font-size: 12px;
+  padding: 14px 12px;
+  box-sizing: border-box;
+  background-color: #74cfae;
+}
+
+.white-text-format {
+  color: white;
+  text-align: center;
+}
+
 .header {
   background-color: white;
   position: fixed;
@@ -31,20 +49,11 @@ body {
 }
 
 .contact-btn {
-  background-color: #74cfae;
-  box-sizing: border-box;
-  color: white;
-  font-size: 12px;
-  padding: 14px 12px;
   margin: 15px 0;
-  transition: all .3s;
 }
 
-.contact-link {
-  text-decoration: none;
-}
-
-.contact-link:hover .contact-btn{
+.contact-btn-link:hover .contact-btn,
+.works-footer-btn-link:hover .works-footer-btn {
   color: #333;
 }
 
@@ -88,14 +97,10 @@ body {
 }
 
 .usability-text-title {
-  color: white;
-  text-align: center;
   font-size: 24px;
 }
 
 .usability-text-content {
-  color: white;
-  text-align: center;
   font-size: 20px;
   margin-top: 35px;
 }
@@ -139,7 +144,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 90px 144px 70px 100px;
+  padding: 90px 160px 70px 100px;
 }
 
 .works-footer-text {
@@ -148,24 +153,13 @@ body {
   color: #333;
 }
 
-.works-footer-link {
-  color: white;
+.works-footer-contents a:first-of-type {
   margin-left: 90px;
-  text-decoration: none;
-  transition: all .3s;
-}
-
-.works-footer-link:hover {
-  color: #333;
 }
 
 .works-footer-btn {
-  padding: 14px 20px;
-  font-size: 12px;
-  box-sizing: border-box;
   line-height: 10px;
   white-space: nowrap;
-  background-color: #74cfae;
 }
 
 .skills {
@@ -174,11 +168,9 @@ body {
 }
 
 .skills-title {
-  color: white;
   font-size: 20px;
   margin: 0 auto;
   padding: 70px 0 70px 0;
-  text-align: center;
 }
 
 .skills-items {
@@ -196,10 +188,8 @@ body {
 }
 
 .item-name {
-  color: white;
   font-size: 16px;
   margin-top: 15px;
-  text-align: center;
 }
 
 .sns {
@@ -241,7 +231,6 @@ body {
   padding: 20px 0 25px 0;
 }
 
-.footer-text {
-  color: white;
+.footer-box p:first-of-type {
   text-align: right;
 }
