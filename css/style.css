@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Raleway';
+  font-family: 'Lato';
   margin: 0;
   width: 100%;
 }
@@ -16,6 +16,11 @@ body {
 .inner {
   width: 1100px;
   margin: 0 auto;
+}
+
+.title-format {
+  font-size: 24px;
+  font-family: 'Raleway';
 }
 
 .white-text-format {
@@ -108,13 +113,10 @@ body {
   margin-top: 35px;
 }
 
-.usability-text-title {
-  font-size: 24px;
-}
-
 .usability-text-content {
   font-size: 20px;
   margin-top: 35px;
+  font-family: 'Raleway';
 }
 
 .works {
@@ -179,7 +181,7 @@ body {
 }
 
 .skills-title {
-  font-size: 20px;
+  /* font-size: 20px; */
   margin: 0 auto;
   padding: 70px 0 70px 0;
 }
@@ -243,4 +245,99 @@ body {
 .footer-text {
   display: flex;
   float: right;
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 767px) {
+  .inner {
+    width: 766px;
+  }
+
+  .header-box {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+
+  .contact-text {
+    display: none;
+  }
+
+  .hamburger-menu {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .hamburger-menu span::before,
+  .hamburger-menu span,
+  .hamburger-menu span::after {
+    content: "";
+    display: block;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    height: 3px;
+    width: 20px;
+    position: absolute;
+  }
+
+  .hamburger-menu span::before {
+    top: 6px;
+  }
+
+  .hamburger-menu span {
+    left: 6px;
+  }
+
+  .hamburger-menu span::after {
+    bottom: 6px;
+  }
+
+  .works-imgs {
+    padding: 33px;
+  }
+
+  .work-link:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  .work-link:nth-child(4) {
+    margin: 80px 0 0 100px;
+  }
+
+  .works-email-box {
+    display: block;
+    padding: 90px 60px 70px 60px;
+  }
+
+  .works-email-btn {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .skills-items {
+    display: block;
+    padding-bottom: 100px;
+  }
+
+  .skills-item {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .skills-item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .skills-item img{
+    margin: 0 auto;
+  }
+  
 }
