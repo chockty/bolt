@@ -58,17 +58,14 @@ body {
 }
 
 .header-box {
+  align-items: center;
   display: flex;
   justify-content: space-between;
+  padding: 15px 0;
 }
 
 .fa-bolt {
   font-size: 40px;
-  padding: 15px 0;
-}
-
-.contact-btn {
-  margin: 15px 0;
 }
 
 /* main */
@@ -96,12 +93,12 @@ body {
 
 .usability {
   background-color: #74cfae;
-  padding-top: 50px;
 }
 
 .usability-box {
   display: flex;
   justify-content: space-around;
+  padding-top: 50px;
 }
 
 .usability-text {
@@ -123,14 +120,18 @@ body {
   background-color: #f2f2f2;
 }
 
+.works-box {
+  padding: 60px 0 70px 0;
+}
+
 .works-title {
   text-align: center;
-  padding: 60px 0 40px 0;
   color: #333;
 }
 
 .works-imgs {
   font-size: 0;
+  margin-top: 60px;
 }
 
 .work-link {
@@ -155,7 +156,7 @@ body {
 
 .works-email-box {
   display: flex;
-  padding: 90px 190px 70px 120px;
+  padding: 90px 190px 0 120px;
 }
 
 .works-email-text {
@@ -180,16 +181,18 @@ body {
   background-color: #4e4e4e;
 }
 
+.skills-box {
+  padding: 70px 0 100px 0;
+}
+
 .skills-title {
-  /* font-size: 20px; */
   margin: 0 auto;
-  padding: 70px 0 70px 0;
 }
 
 .skills-items {
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 100px;
+  margin-top: 70px;
 }
 
 .skills-item {
