@@ -105,7 +105,7 @@ body {
 }
 
 .usability-text {
-  width: 682px;
+  padding: 0 82px;
   line-height: normal;
 }
 
@@ -158,7 +158,7 @@ body {
 .works-email-box {
   display: flex;
   margin: 90px auto 0 auto;
-  width: 69%;
+  padding: 0px 170px;
   align-items: baseline;
 }
 
@@ -223,6 +223,7 @@ body {
 }
 
 .sns-icon-box {
+  display: inline-block;
   width: 185px;
   text-align: center;
   transition: all 0.3s;
@@ -250,84 +251,74 @@ body {
 
 .footer-text {
   text-align: right;
+  color: white;
 }
 
-@media screen and (max-width: 1199px) {
-    /* 共通プロパティ */
+@media screen and (max-width: 1200px) {
+  /* 共通プロパティ */
   .inner {
-    width: 1100px;
+    width: 100%;
   }
 
   /* header */
+  .header-box {
+    box-sizing: border-box;
+    padding: 15px 3%;
+  }
 
   /* main */
+  .usability {
+    background-color: #74cfae;
+  }
+
   .usability-box {
     display: block;
-    padding: 50px 0 20px 0;
-    text-align: ;
-  }
-
-  .main-theme-title {
-    margin-top: 20px;
-  }
-
-  .sub-theme-title {
-    margin-top: 35px;
-  }
-
-  .usability-text {
-    width: 682px;
-    line-height: normal;
-  }
-
-  .usability-text h1 {
-    margin-top: 35px;
-  }
-
-  .usability-text-content {
+    padding: 50px 0 25px 0;
     text-align: center;
   }
 
-  .works {
-    background-color: #f2f2f2;
+  .usability-text {
+    line-height: normal;
+    padding: 0;
+  }
+
+  .usability-text h2 {
+    margin-top: 20px;
   }
 
   .works-box {
     padding: 60px 0 70px 0;
   }
 
-  .works-title {
-    text-align: center;
-    color: #333;
-  }
-
   .works-imgs {
     font-size: 0;
     margin-top: 60px;
+    text-align: center;
   }
 
   .work-link {
-    display: inline-block;
-    margin-left: 100px;
-    opacity: 0.7;
-    transition: all 0.3s;
+    display: block;
+    margin-left: 0;
   }
 
   .work-link:hover {
     opacity: 1;
   }
 
-  .work-link:nth-child(3n+1) {
-    margin-left: 0 ;
+  .work-link:nth-child(n+4) {
+    margin-top: 0;
   }
 
-  .work-link:nth-child(n+4) {
+  .work-link:nth-child(3n+1) {
+    margin-left: 0 ;
     margin-top: 80px;
   }
 
   .works-email-box {
-    display: flex;
-    padding: 90px 190px 0 120px;
+    display: block;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    padding: 0;
   }
 
   .works-email-text {
@@ -338,101 +329,26 @@ body {
   }
 
   .works-email-box a:first-of-type {
-    margin-left: 90px;
-  }
-
-  .works-email-btn {
-    line-height: 10px;
-    text-align: center;
-    white-space: nowrap;
-    width: 140%;
-  }
-
-  .skills {
-    background-color: #4e4e4e;
-  }
-
-  .skills-box {
-    padding: 70px 0 100px 0;
-  }
-
-  .skills-title {
-    margin: 0 auto;
+    display: inline-block;
+    margin: 40px auto 0 auto;
   }
 
   .skills-items {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 70px;
-  }
-
-  .skills-item {
-    margin-left: 180px;
-  }
-
-  .skills-item:first-of-type {
-    margin-left: 0;
-  }
-
-  .item-name {
-    font-size: 16px;
-    margin-top: 15px;
-  }
-
-  .sns {
-    background-color: #f2f2f2;
-  }
-
-  .sns-box {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    padding: 200px 0;
-  }
-
-  .sns-icon-box {
-    width: 185px;
+    display: block;
     text-align: center;
-    transition: all 0.3s;
   }
 
-  .sns-icon-box:hover {
-    background-color: white;
+  .skills-items li {
+    margin-top: 88px;
   }
 
-  .sns-icon-content {
-    color: #74cfae;
-    font-size: 40px;
-    padding: 30px 0;
-  }
-
-  /* footer */
-  .footer {
-    background-color: #74cfae;
-  }
-
-  .footer-box {
-    margin: 0 auto;
-    padding: 20px 0 25px 0;
-  }
-
-  .footer-text {
-    display: flex;
-    float: right;
+  .skills-items li:first-of-type {
+    margin-top: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* .inner {
-    width: 766px;
-  }
-
-  .header-box {
-    box-sizing: border-box;
-    padding: 15px 15px;
-  }
-
-  .contact-text {
+  .contact-btn {
     display: none;
   }
 
@@ -441,120 +357,61 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 10px;
+    width: 40px;
+    height: 30px;
     position: relative;
     box-sizing: border-box;
   }
 
-  .hamburger-menu span::before,
-  .hamburger-menu span,
-  .hamburger-menu span::after {
+  .hamburger-menu span {
     content: "";
     display: block;
     border-radius: 3px;
     background-color: #f2f2f2;
-    height: 3px;
-    width: 20px;
+    height: 2px;
+    width: 26px;
     position: absolute;
   }
 
-  .hamburger-menu span::before {
+  .hamburger-menu span:nth-child(1){
+    left: 6px;
     top: 6px;
   }
 
-  .hamburger-menu span {
+  .hamburger-menu span:nth-child(2) {
+    top: 13px;
     left: 6px;
   }
 
-  .hamburger-menu span::after {
+  .hamburger-menu span:nth-child(3) {
+    left: 6px;
     bottom: 6px;
-  }
-
-  .theme-box {
-    padding: 160px 200px 130px 200px;
-    width: 260px;
   }
 
   .main-theme-title {
     font-size: 80px;
   }
 
+  .theme-box {
+    padding: 160px 0 130px 0;
+  }
+
   .usability-box {
-    padding-bottom: 30px;
+    box-sizing: border-box;
+    padding: 5%;
   }
 
-  .usability-box,
-  .usability-box img {
+  .sns-box {
     display: block;
-  }
-
-  .usability-box,
-  .usability-text {
-    width: 315px;
-  }
-
-  .usability-box img {
-    margin: 0 auto;
-  }
-
-  .works-box {
-    width: 315px;
-  }
-
-  .work-link {
-    display: block;
-    margin-left: 0;
-    /* add */
-    /* text-align: center;
-  }*/
-
-  /* .work-link img{
-    display: block;
-    margin: 0 auto;
-  }
-
-  .work-link:nth-child(n+5) {
-    margin-top: 0;
-  } */
-
-  /* .works-imgs {
-    padding: 33px;
-  }
-
-  .work-link:nth-child(odd) {
-    margin-left: 0;
-  }
-
-  .work-link:nth-child(4) {
-    margin: 80px 0 0 100px;
-  }
-
-  .works-email-box {
-    display: block;
-    padding: 90px 60px 70px 60px;
-  }
-
-  .works-email-btn {
-    width: 30%;
-    margin: 0 auto;
-  } */
-
-  /* .skills-items {
-    display: block;
-    padding-bottom: 100px;
-  }
-
-  .skills-item {
-    margin-left: 0;
     text-align: center;
-    margin-bottom: 25px;
+    padding-top: 50px;
   }
 
-  .skills-item:last-of-type {
-    margin-bottom: 0;
+  .sns-icon-box {
+    width: 100%;
   }
 
-  .skills-item img{
-    margin: 0 auto;
-  } */
-  
+  .footer-text {
+    padding-right: 5%;
+  }
 }
