@@ -64,7 +64,7 @@ body {
   padding: 15px 0;
 }
 
-.fa-bolt {
+.header-icon {
   font-size: 40px;
 }
 
@@ -79,6 +79,7 @@ body {
 
 .main-theme-title {
   color: #74cfae;
+  font-family: 'Raleway';
   font-size: 90px;
   font-weight: 700;
   text-align: center;
@@ -261,8 +262,7 @@ body {
 
   .header-box {
     box-sizing: border-box;
-    margin: 0 0;
-    padding: 0 10px;
+    padding: 15px 15px;
   }
 
   .contact-text {
@@ -302,7 +302,52 @@ body {
     bottom: 6px;
   }
 
-  .works-imgs {
+  .theme-box {
+    padding: 160px 200px 130px 200px;
+    width: 260px;
+  }
+
+  .main-theme-title {
+    font-size: 80px;
+  }
+
+  .usability-box {
+    padding-bottom: 30px;
+  }
+
+  .usability-box,
+  .usability-box img {
+    display: block;
+  }
+
+  .usability-box,
+  .usability-text {
+    width: 315px;
+  }
+
+  .usability-box img {
+    margin: 0 auto;
+  }
+
+  .works-box {
+    width: 315px;
+  }
+
+  .work-link {
+    display: block;
+    margin-left: 0;
+  }
+
+  .work-link img{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .work-link:nth-child(n+5) {
+    margin-top: 0;
+  }
+
+  /* .works-imgs {
     padding: 33px;
   }
 
@@ -322,7 +367,7 @@ body {
   .works-email-btn {
     width: 30%;
     margin: 0 auto;
-  }
+  } */
 
   .skills-items {
     display: block;
