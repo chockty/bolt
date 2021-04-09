@@ -157,7 +157,7 @@ body {
 
 .works-email-box {
   display: flex;
-  margin: 90px auto 0 auto;
+  margin: 90px auto 0;
   padding: 0px 170px;
   align-items: baseline;
 }
@@ -267,7 +267,7 @@ body {
 
   .usability-text {
     width: 90%;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 0;
   }
 
   .usability-text h2 {
@@ -279,7 +279,6 @@ body {
   }
 
   .works-imgs {
-    font-size: 0;
     margin-top: 40px;
     text-align: center;
   }
@@ -298,27 +297,24 @@ body {
   }
 
   .work-link:nth-child(3n+1) {
-    margin-left: 0 ;
     margin-top: 80px;
+    margin-left: 0 ;
+  }
+
+  .work-link:first-child {
+    margin-top: 0;
   }
 
   .works-email-box {
     display: block;
-    margin: 80px auto 0 auto;
+    margin: 80px auto 0;
     text-align: center;
     padding: 0;
   }
 
-  .works-email-text {
-    color: #333;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-  }
-
   .works-email-box a:first-of-type {
     display: inline-block;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 0;
   }
 
   .skills-items {
