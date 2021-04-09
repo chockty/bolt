@@ -194,15 +194,15 @@ body {
 
 .skills-items {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 70px;
 }
 
-.skills-item {
+.skills-items li {
   margin-left: 180px;
 }
 
-.skills-item:first-of-type {
+.skills-items li:first-child {
   margin-left: 0;
 }
 
@@ -254,7 +254,7 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   /* 共通プロパティ */
   .inner {
     width: 100%;
