@@ -105,7 +105,7 @@ body {
 }
 
 .usability-text {
-  padding: 0 82px;
+  width: 60%;
   line-height: normal;
 }
 
@@ -257,18 +257,7 @@ body {
 @media screen and (max-width: 1199px) {
   /* 共通プロパティ */
   .inner {
-    width: 100%;
-  }
-
-  /* header */
-  .header-box {
-    box-sizing: border-box;
-    padding: 15px 3%;
-  }
-
-  /* main */
-  .usability {
-    background-color: #74cfae;
+    width: 97%;
   }
 
   .usability-box {
@@ -278,8 +267,8 @@ body {
   }
 
   .usability-text {
-    line-height: normal;
-    padding: 0;
+    width: 90%;
+    margin: 20px auto 0 auto;
   }
 
   .usability-text h2 {
@@ -292,7 +281,7 @@ body {
 
   .works-imgs {
     font-size: 0;
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: center;
   }
 
@@ -339,6 +328,7 @@ body {
   }
 
   .skills-items li {
+    margin-left: 0;
     margin-top: 88px;
   }
 
@@ -364,7 +354,6 @@ body {
   }
 
   .hamburger-menu span {
-    content: "";
     display: block;
     border-radius: 3px;
     background-color: #f2f2f2;
@@ -396,15 +385,10 @@ body {
     padding: 160px 0 130px 0;
   }
 
-  .usability-box {
-    box-sizing: border-box;
-    padding: 5%;
-  }
-
   .sns-box {
     display: block;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px 0;
   }
 
   .sns-icon-box {
